@@ -26,7 +26,7 @@
 | 题号                                                         | C++11 | Java8 | Scala | Python3 | Go   |
 | ------------------------------------------------------------ | ----- | ----- | ----- | ------- | ---- |
 | [485. 最大连续1的个数](https://leetcode-cn.com/problems/max-consecutive-ones/) | 1     |       |       | 1        |      |
-| [495. 提莫攻击](https://leetcode-cn.com/problems/teemo-attacking/) | 1     |       |       |         |      |
+| [495. 提莫攻击](https://leetcode-cn.com/problems/teemo-attacking/) | 1     |       |       | 1        |      |
 | [414. 第三大的数](https://leetcode-cn.com/problems/third-maximum-number/) | 1     |       |       |         |      |
 | [628. 三个数的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-three-numbers/) | 1     |       |       |         |      |
 
