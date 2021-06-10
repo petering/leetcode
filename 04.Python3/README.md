@@ -34,7 +34,7 @@ class Solution(object):
 
 
 
-注意中毒时间不可持续
+注意中毒时间不可叠加
 
 ```python3
 class Solution:
