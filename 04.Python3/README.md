@@ -20,13 +20,16 @@ class Solution(object):
         n=len(nums)
         count=0
         countmax=0
-        for i in range(n):
+      
+      for i in range(n):
             if (nums[i]==1):
                 count=count+1
             else:
                 count=0
-            if(count>=countmax):
+           
+           if(count>=countmax):#连续1个数大则更新
                 countmax=count
+                
         return countmax
 ```
 
@@ -41,11 +44,14 @@ class Solution:
     def findPoisonedDuration(self, timeSeries: List[int], duration: int) -> int:
         sumTime=0
         poisoning=0
+        
         for i in range(len(timeSeries)-1):
             poisoning=timeSeries[i]+duration
+            
             if timeSeries[i+1]>poisoning:
                 sumTime+=duration
             elif timeSeries[i+1]<=poisoning:
                 sumTime+=timeSeries[i+1]-timeSeries[i]
-        return sumTime+duration
+                
+        return sumTime+duration#注意加上最后中毒时间
 ```
