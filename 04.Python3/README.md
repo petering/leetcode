@@ -29,3 +29,22 @@ class Solution(object):
                 countmax=count
         return countmax
 ```
+
+#### [495. 提莫攻击](https://leetcode-cn.com/problems/teemo-attacking/)
+
+
+
+注意中毒时间不可持续
+'''python3
+class Solution:
+    def findPoisonedDuration(self, timeSeries: List[int], duration: int) -> int:
+        sumTime=0
+        poisoning=0
+        for i in range(len(timeSeries)-1):
+            poisoning=timeSeries[i]+duration
+            if timeSeries[i+1]>poisoning:
+                sumTime+=duration
+            elif timeSeries[i+1]<=poisoning:
+                sumTime+=timeSeries[i+1]-timeSeries[i]
+        return sumTime+duration
+'''
