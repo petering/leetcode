@@ -27,7 +27,7 @@ class Solution(object):
             else:
                 count=0
            
-           if(count>=countmax):#连续1个数大则更新
+           if(count>=countmax):     #连续1个数大则更新
                 countmax=count
                 
         return countmax
@@ -53,5 +53,5 @@ class Solution:
             elif timeSeries[i+1]<=poisoning:
                 sumTime+=timeSeries[i+1]-timeSeries[i]
                 
-        return sumTime+duration#注意加上最后中毒时间
+        return sumTime+duration     #注意加上最后中毒时间
 ```
