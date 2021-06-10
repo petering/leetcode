@@ -35,7 +35,8 @@ class Solution(object):
 
 
 注意中毒时间不可持续
-'''python3
+
+```python3
 class Solution:
     def findPoisonedDuration(self, timeSeries: List[int], duration: int) -> int:
         sumTime=0
@@ -47,4 +48,4 @@ class Solution:
             elif timeSeries[i+1]<=poisoning:
                 sumTime+=timeSeries[i+1]-timeSeries[i]
         return sumTime+duration
-'''
+```
